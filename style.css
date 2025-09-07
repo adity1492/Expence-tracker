@@ -1,0 +1,137 @@
+* {
+    margin:opx;
+    padding: 0px;
+    box-sizing: border-box;
+    color: rgb(235, 235, 126);
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: none;
+}
+.top{
+    justify-content: space-between;
+}
+header{
+    width: 800px;
+    height: 100px;
+    padding: 20px;
+    background-color:rgb(101, 101, 85);
+    border: 2px solid black;
+    border-radius: 25px;
+    display:flex;
+    justify-content: space-between;
+    position:sticky;
+}
+.personalinfo, .calendar,.expences, .income{
+    background-color: rgb(101, 101, 85);
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    align-items: center;
+    border:none;
+}
+.calendar{
+    max-width: 24px;
+}
+
+.current-balance{
+    font-weight: 900; 
+    font-size: 24px;
+}
+.balance-label, .balance-amount{
+    text-align: center;
+}
+.section{
+    width: 800px;
+    height: 60px;
+    background-color: rgb(101, 101, 85);
+    border: 2px solid black;
+    border-radius: 30px;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+    overflow: auto;
+}
+.year-month{
+    width: 100px;
+    display: flex;
+}
+.year-button, .month-button{
+    background-color:rgb(101, 101, 85);
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 25px;
+    border:solid black 2px;
+
+}
+.income{
+    border-radius: 25px;
+}
+.main{
+    background-color: rgb(101, 101, 85);;
+    border-radius: 25px;
+    width: 800px;
+    /* display:flex;
+    justify-content:space-evenly; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr 2fr; 
+    grid-template-rows: auto auto;
+    /* margin-bottom: 15px; */
+}
+.date { grid-column: 1; background: rgb(101, 101, 85); padding: 10px; }
+.day { grid-column: 2; background: rgb(101, 101, 85); padding: 10px; }
+.expence-per-day { grid-column: 4; background: rgb(101, 101, 85); padding: 10px; }
+.income-per-day { grid-column: 5; background: rgb(101, 101, 85); padding: 10px; }
+    
+.history-per-day {
+    grid-column: 1 / -1; /* span full row */
+    background: #454534;
+    padding: 10px;
+    overflow: auto;
+    width: 800px;
+    height: 600px;
+    }
+footer{
+    width:800px;
+    height: 50px;
+    position: fixed;
+    background-color: rgb(101, 101, 85);
+    display: flex;
+    justify-content: space-between;
+}
+.foot{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(101, 101, 85);
+
+}
+.btn, .add{
+    width: 50px;
+    height: 50px;
+    color:black;
+    font-size: 30px;
+    font-weight: 1000px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(101, 101, 85);
+}
+.add{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color:rgb(235, 235, 126);
+    color: black;
+    position:relative;
+    bottom:25px;
+}
+
+
+
+
+
